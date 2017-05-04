@@ -1,0 +1,48 @@
+#include <iostream>
+using namespace std;
+int main() {
+	char input;
+	cout << "What game would you like to play during lunch?" << endl;
+
+	int ET = 0;
+	int Superman = 0;
+	int Big = 0;
+
+		cout << "Which year do you perfer?(2001=a, 1964=b, 2017=c" << endl;
+		cin >> input;
+		
+		if (input == 'a')
+			ET = ET + 1;
+		else if (input == 'b')
+			Superman = Superman + 1;
+		else if (input == 'c')
+			Big = Big + 1;
+
+		cout << "Which colors do you perfer my good friend?(Blue=r,Grey=h,Red=y)" << endl;
+		cin >> input;
+
+		if (input == 'r')
+			ET = ET + 1;
+		else if (input == 'y')
+			Superman = Superman + 1;
+		else if (input == 'h')
+			Big = Big + 1;
+
+
+		cout << "what is your transportation of choice?(bike=b,truck=t,fly=f)" << endl;
+			cin >> input;
+
+		if (input == 'b')
+			ET = ET + 1;
+		else if (input == 'f')
+			Superman = Superman + 1;
+		else if (input == 't')
+			Big = Big + 1;
+
+		if ((ET > Superman) && (ET > Big))
+			cout << "THE GAME YOU MUST PLAY IS ET." << endl;
+         else if ((Superman > ET) && (Superman > Big))
+			cout << "THE GAME YOU MUST PLAY IS SUPERMAN 64." << endl;
+		else if ((Big > Superman) && (Big > ET))
+			cout << "THE GAME YOU MUST PLAY IS BIG RIG OVER THE ROAD RACING ." << endl;
+}
